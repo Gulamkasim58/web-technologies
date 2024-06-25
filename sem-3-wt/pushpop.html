@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<button type="button" onclick="push()">push</button>
+	<button type="button" onclick="pop()">pop</button>
+	<button type="button" onclick="shift()">shift</button>
+	<button type="button" onclick="unshift()">unshift</button>
+	<button type="button" onclick="sort()">sort</button>
+	<button type="button" onclick="splice()">splice</button>
+	<button type="button" onclick="display()">display</button>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		
+		array=[]
+
+		function push() {
+
+			array.push(parseInt(prompt("enter value")))
+			console.log(array)
+
+		}
+
+		function pop(){
+
+			if(array.length > 0){
+
+				alert("poped element is "+array.pop())
+			}
+			else{
+
+				alert("empty")
+			}
+		}
+
+		function shift(){
+
+			if(array.length > 0){
+
+				alert("element"+array.shift())
+				console.log(array)
+			}
+			else{
+				alert("empty")
+			}
+		}
+
+		function unshift(){
+
+			array.unshift(parseInt(prompt("enter value")))
+
+		
+		}
+
+		function display(){
+			alert("array element is"+array)
+		}
+
+		function sort(){
+			// array.sort();
+			console.log(array.sort())
+		}
+
+		function splice(){
+			var a = parseInt(prompt("enter a index to remove element"))
+			var b = parseInt(prompt("enter element  "+a+":"))
+			array.splice(a,1,b)
+			console.log(array)
+
+					}
+	</script>
+
+</body>
+</html>

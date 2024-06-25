@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		var a=Number(prompt("enter first number"));
+		var b=Number(prompt("enter seconed number"));
+
+		var flag=false;
+
+		for(let i=a;i<=b;i++){
+
+			flag =false;
+
+			for(let x=2;x<=i/2;x++){
+
+				if(i%x==0){
+
+					flag=true;
+					break;
+				}
+
+			}
+
+			if(flag==false){
+
+				console.log(i)
+			}
+		}
+
+
+	</script>
+
+</body>
+</html>
